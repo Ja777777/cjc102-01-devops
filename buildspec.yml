@@ -4,6 +4,7 @@ phases:
   install:
     runtime-versions:
       python: 3.12
+    commands:
       - docker login -u $dockerhub_username -p $dockerhub_password
   pre_build:
     commands:
